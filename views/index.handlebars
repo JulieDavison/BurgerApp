@@ -1,6 +1,6 @@
-<h1>Burgers!</h1>
+<h1>Super Good Burgers!</h1>
 
-<h2>Devoured Burgers!</h2>
+<h2>Ready to Eat Burgers!</h2>
 
 <ul>
   {{#each burgers}}
@@ -10,7 +10,8 @@
   {{/each}}
 </ul>
 
-<h2>Burgers!</h2>
+<h2>Devoured Burgers!</h2>
+{{!-- <h2>Ready to Eat Burgers!</h2> --}}
 
 <ul>
   {{#each burgers}}
@@ -20,19 +21,19 @@
   {{/each}}
 </ul>
 
-<h2>Add Burgers</h2>
+<h2>Add You Favorite Burgers</h2>
 <form class="create-form">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca" burgername="name">
   </div>
 
   <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Burger
+    <label for="devoured">Place Order?</label><br>
+    {{!-- <input type="radio" name="devoured" value="1" > Devoured!<br> --}}
+    <input type="radio" name="devoured" value="0" checked> Order Burger
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Submit Order</button>
 </form>
